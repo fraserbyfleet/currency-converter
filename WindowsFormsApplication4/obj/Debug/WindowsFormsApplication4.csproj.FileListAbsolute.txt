@@ -7,3 +7,12 @@
 \\alb-homes1.massey.ac.nz\15078889\my documents\visual studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 \\alb-homes1.massey.ac.nz\15078889\my documents\visual studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 \\alb-homes1.massey.ac.nz\15078889\my documents\visual studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Documents\Dropbox\projects\currency-calculator\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb

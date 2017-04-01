@@ -28,20 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.USD1 = new System.Windows.Forms.RadioButton();
-            this.CAD1 = new System.Windows.Forms.RadioButton();
-            this.AUD1 = new System.Windows.Forms.RadioButton();
-            this.GBP1 = new System.Windows.Forms.RadioButton();
-            this.EUR1 = new System.Windows.Forms.RadioButton();
-            this.NZD1 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.USD2 = new System.Windows.Forms.RadioButton();
-            this.CAD2 = new System.Windows.Forms.RadioButton();
-            this.AUD2 = new System.Windows.Forms.RadioButton();
-            this.GBP2 = new System.Windows.Forms.RadioButton();
-            this.EUR2 = new System.Windows.Forms.RadioButton();
-            this.NZD2 = new System.Windows.Forms.RadioButton();
             this.amount = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
             this.from = new System.Windows.Forms.Label();
@@ -51,192 +37,21 @@
             this.CONVERT = new System.Windows.Forms.Button();
             this.RESET = new System.Windows.Forms.Button();
             this.USERINPUT = new System.Windows.Forms.MaskedTextBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.cbCurrencyFrom = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbCurrencyTo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.USD1);
-            this.groupBox1.Controls.Add(this.CAD1);
-            this.groupBox1.Controls.Add(this.AUD1);
-            this.groupBox1.Controls.Add(this.GBP1);
-            this.groupBox1.Controls.Add(this.EUR1);
-            this.groupBox1.Controls.Add(this.NZD1);
-            this.groupBox1.Location = new System.Drawing.Point(97, 161);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(118, 112);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "CONVERT FROM:";
-            // 
-            // USD1
-            // 
-            this.USD1.AutoSize = true;
-            this.USD1.Location = new System.Drawing.Point(57, 62);
-            this.USD1.Name = "USD1";
-            this.USD1.Size = new System.Drawing.Size(48, 17);
-            this.USD1.TabIndex = 5;
-            this.USD1.TabStop = true;
-            this.USD1.Text = "USD";
-            this.USD1.UseVisualStyleBackColor = true;
-            this.USD1.CheckedChanged += new System.EventHandler(this.USD1_CheckedChanged);
-            // 
-            // CAD1
-            // 
-            this.CAD1.AutoSize = true;
-            this.CAD1.Location = new System.Drawing.Point(57, 39);
-            this.CAD1.Name = "CAD1";
-            this.CAD1.Size = new System.Drawing.Size(47, 17);
-            this.CAD1.TabIndex = 4;
-            this.CAD1.TabStop = true;
-            this.CAD1.Text = "CAD";
-            this.CAD1.UseVisualStyleBackColor = true;
-            this.CAD1.CheckedChanged += new System.EventHandler(this.CAD1_CheckedChanged);
-            // 
-            // AUD1
-            // 
-            this.AUD1.AutoSize = true;
-            this.AUD1.Location = new System.Drawing.Point(57, 16);
-            this.AUD1.Name = "AUD1";
-            this.AUD1.Size = new System.Drawing.Size(48, 17);
-            this.AUD1.TabIndex = 3;
-            this.AUD1.TabStop = true;
-            this.AUD1.Text = "AUD";
-            this.AUD1.UseVisualStyleBackColor = true;
-            this.AUD1.CheckedChanged += new System.EventHandler(this.AUD1_CheckedChanged);
-            // 
-            // GBP1
-            // 
-            this.GBP1.AutoSize = true;
-            this.GBP1.Location = new System.Drawing.Point(3, 62);
-            this.GBP1.Name = "GBP1";
-            this.GBP1.Size = new System.Drawing.Size(47, 17);
-            this.GBP1.TabIndex = 2;
-            this.GBP1.TabStop = true;
-            this.GBP1.Text = "GBP";
-            this.GBP1.UseVisualStyleBackColor = true;
-            this.GBP1.CheckedChanged += new System.EventHandler(this.GBP1_CheckedChanged);
-            // 
-            // EUR1
-            // 
-            this.EUR1.AutoSize = true;
-            this.EUR1.Location = new System.Drawing.Point(3, 39);
-            this.EUR1.Name = "EUR1";
-            this.EUR1.Size = new System.Drawing.Size(48, 17);
-            this.EUR1.TabIndex = 1;
-            this.EUR1.TabStop = true;
-            this.EUR1.Text = "EUR";
-            this.EUR1.UseVisualStyleBackColor = true;
-            this.EUR1.CheckedChanged += new System.EventHandler(this.EUR1_CheckedChanged);
-            // 
-            // NZD1
-            // 
-            this.NZD1.AutoSize = true;
-            this.NZD1.Location = new System.Drawing.Point(3, 16);
-            this.NZD1.Name = "NZD1";
-            this.NZD1.Size = new System.Drawing.Size(48, 17);
-            this.NZD1.TabIndex = 0;
-            this.NZD1.TabStop = true;
-            this.NZD1.Text = "NZD";
-            this.NZD1.UseVisualStyleBackColor = true;
-            this.NZD1.CheckedChanged += new System.EventHandler(this.NZD1_CheckedChanged);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.USD2);
-            this.groupBox2.Controls.Add(this.CAD2);
-            this.groupBox2.Controls.Add(this.AUD2);
-            this.groupBox2.Controls.Add(this.GBP2);
-            this.groupBox2.Controls.Add(this.EUR2);
-            this.groupBox2.Controls.Add(this.NZD2);
-            this.groupBox2.Location = new System.Drawing.Point(330, 161);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(118, 112);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "CONVERT TO:";
-            // 
-            // USD2
-            // 
-            this.USD2.AutoSize = true;
-            this.USD2.Location = new System.Drawing.Point(55, 62);
-            this.USD2.Name = "USD2";
-            this.USD2.Size = new System.Drawing.Size(48, 17);
-            this.USD2.TabIndex = 6;
-            this.USD2.TabStop = true;
-            this.USD2.Text = "USD";
-            this.USD2.UseVisualStyleBackColor = true;
-            this.USD2.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
-            // 
-            // CAD2
-            // 
-            this.CAD2.AutoSize = true;
-            this.CAD2.Location = new System.Drawing.Point(56, 39);
-            this.CAD2.Name = "CAD2";
-            this.CAD2.Size = new System.Drawing.Size(47, 17);
-            this.CAD2.TabIndex = 6;
-            this.CAD2.TabStop = true;
-            this.CAD2.Text = "CAD";
-            this.CAD2.UseVisualStyleBackColor = true;
-            this.CAD2.CheckedChanged += new System.EventHandler(this.CAD2_CheckedChanged);
-            // 
-            // AUD2
-            // 
-            this.AUD2.AutoSize = true;
-            this.AUD2.Location = new System.Drawing.Point(56, 19);
-            this.AUD2.Name = "AUD2";
-            this.AUD2.Size = new System.Drawing.Size(48, 17);
-            this.AUD2.TabIndex = 6;
-            this.AUD2.TabStop = true;
-            this.AUD2.Text = "AUD";
-            this.AUD2.UseVisualStyleBackColor = true;
-            this.AUD2.CheckedChanged += new System.EventHandler(this.AUD2_CheckedChanged);
-            // 
-            // GBP2
-            // 
-            this.GBP2.AutoSize = true;
-            this.GBP2.Location = new System.Drawing.Point(2, 62);
-            this.GBP2.Name = "GBP2";
-            this.GBP2.Size = new System.Drawing.Size(47, 17);
-            this.GBP2.TabIndex = 6;
-            this.GBP2.TabStop = true;
-            this.GBP2.Text = "GBP";
-            this.GBP2.UseVisualStyleBackColor = true;
-            this.GBP2.CheckedChanged += new System.EventHandler(this.GBP2_CheckedChanged);
-            // 
-            // EUR2
-            // 
-            this.EUR2.AutoSize = true;
-            this.EUR2.Location = new System.Drawing.Point(2, 39);
-            this.EUR2.Name = "EUR2";
-            this.EUR2.Size = new System.Drawing.Size(48, 17);
-            this.EUR2.TabIndex = 6;
-            this.EUR2.TabStop = true;
-            this.EUR2.Text = "EUR";
-            this.EUR2.UseVisualStyleBackColor = true;
-            this.EUR2.CheckedChanged += new System.EventHandler(this.EUR2_CheckedChanged);
-            // 
-            // NZD2
-            // 
-            this.NZD2.AutoSize = true;
-            this.NZD2.Location = new System.Drawing.Point(2, 19);
-            this.NZD2.Name = "NZD2";
-            this.NZD2.Size = new System.Drawing.Size(48, 17);
-            this.NZD2.TabIndex = 6;
-            this.NZD2.TabStop = true;
-            this.NZD2.Text = "NZD";
-            this.NZD2.UseVisualStyleBackColor = true;
-            this.NZD2.CheckedChanged += new System.EventHandler(this.NZD2_CheckedChanged);
             // 
             // amount
             // 
             this.amount.AutoSize = true;
             this.amount.Location = new System.Drawing.Point(155, 326);
             this.amount.Name = "amount";
-            this.amount.Size = new System.Drawing.Size(45, 13);
+            this.amount.Size = new System.Drawing.Size(60, 13);
             this.amount.TabIndex = 7;
-            this.amount.Text = "amount:";
+            this.amount.Text = "amount ($):";
+            this.amount.Click += new System.EventHandler(this.amount_Click);
             // 
             // title
             // 
@@ -291,7 +106,7 @@
             this.CONVERT.Location = new System.Drawing.Point(216, 419);
             this.CONVERT.Name = "CONVERT";
             this.CONVERT.Size = new System.Drawing.Size(100, 23);
-            this.CONVERT.TabIndex = 6;
+            this.CONVERT.TabIndex = 4;
             this.CONVERT.Text = "CONVERT";
             this.CONVERT.UseVisualStyleBackColor = true;
             this.CONVERT.Click += new System.EventHandler(this.CONVERT_Click);
@@ -301,7 +116,7 @@
             this.RESET.Location = new System.Drawing.Point(216, 448);
             this.RESET.Name = "RESET";
             this.RESET.Size = new System.Drawing.Size(100, 23);
-            this.RESET.TabIndex = 13;
+            this.RESET.TabIndex = 5;
             this.RESET.Text = "RESET";
             this.RESET.UseVisualStyleBackColor = true;
             this.RESET.Click += new System.EventHandler(this.RESET_Click);
@@ -309,18 +124,70 @@
             // USERINPUT
             // 
             this.USERINPUT.BeepOnError = true;
+            this.USERINPUT.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.USERINPUT.Location = new System.Drawing.Point(216, 326);
-            this.USERINPUT.Mask = "$999999999.00";
             this.USERINPUT.Name = "USERINPUT";
             this.USERINPUT.Size = new System.Drawing.Size(100, 20);
-            this.USERINPUT.TabIndex = 15;
+            this.USERINPUT.TabIndex = 3;
             this.USERINPUT.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.USERINPUT_MaskInputRejected);
+            // 
+            // cbCurrencyFrom
+            // 
+            this.cbCurrencyFrom.FormattingEnabled = true;
+            this.cbCurrencyFrom.Items.AddRange(new object[] {
+            "NZD",
+            "AUD",
+            "CAD",
+            "EUR",
+            "GBP",
+            "USD"});
+            this.cbCurrencyFrom.Location = new System.Drawing.Point(103, 129);
+            this.cbCurrencyFrom.Name = "cbCurrencyFrom";
+            this.cbCurrencyFrom.Size = new System.Drawing.Size(121, 21);
+            this.cbCurrencyFrom.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(100, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "From Currency";
+            // 
+            // cbCurrencyTo
+            // 
+            this.cbCurrencyTo.FormattingEnabled = true;
+            this.cbCurrencyTo.Items.AddRange(new object[] {
+            "NZD",
+            "AUD",
+            "CAD",
+            "EUR",
+            "GBP",
+            "USD"});
+            this.cbCurrencyTo.Location = new System.Drawing.Point(275, 129);
+            this.cbCurrencyTo.Name = "cbCurrencyTo";
+            this.cbCurrencyTo.Size = new System.Drawing.Size(121, 21);
+            this.cbCurrencyTo.TabIndex = 15;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(272, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "To Currency";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 591);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbCurrencyTo);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbCurrencyFrom);
             this.Controls.Add(this.USERINPUT);
             this.Controls.Add(this.RESET);
             this.Controls.Add(this.CONVERT);
@@ -330,22 +197,14 @@
             this.Controls.Add(this.from);
             this.Controls.Add(this.title);
             this.Controls.Add(this.amount);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label amount;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label from;
@@ -355,18 +214,10 @@
         private System.Windows.Forms.Button CONVERT;
         private System.Windows.Forms.Button RESET;
         private System.Windows.Forms.MaskedTextBox USERINPUT;
-        private System.Windows.Forms.RadioButton USD1;
-        private System.Windows.Forms.RadioButton CAD1;
-        private System.Windows.Forms.RadioButton AUD1;
-        private System.Windows.Forms.RadioButton GBP1;
-        private System.Windows.Forms.RadioButton EUR1;
-        private System.Windows.Forms.RadioButton NZD1;
-        private System.Windows.Forms.RadioButton USD2;
-        private System.Windows.Forms.RadioButton CAD2;
-        private System.Windows.Forms.RadioButton AUD2;
-        private System.Windows.Forms.RadioButton GBP2;
-        private System.Windows.Forms.RadioButton EUR2;
-        private System.Windows.Forms.RadioButton NZD2;
+        private System.Windows.Forms.ComboBox cbCurrencyFrom;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbCurrencyTo;
+        private System.Windows.Forms.Label label2;
     }
 }
 
